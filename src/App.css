@@ -68,11 +68,16 @@
 .d{
   list-style-type: "🗑️";
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  size: 150px;
 }
 .item{
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 }
 /* <!-- HTML !-->
 <button class="button-89" role="button">Button 89</button> */
@@ -137,4 +142,127 @@ input:focus {
 input::placeholder {
   color: #999;                /* Light gray placeholder text color */
   font-style: italic;         /* Italicize the placeholder text */
+}
+/* .description-input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.description-input:focus {
+  border-color: #007bff;
+  outline: none;
+} */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* خلفية أساسية */
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.item.low {
+  background-color: #e0f7fa; /* خلفية منخفضة */
+}
+
+.item.medium {
+  background-color: #fff3e0; /* خلفية متوسطة */
+}
+
+.item.high {
+  background-color: #ffebee; /* خلفية عالية */
+}
+
+.task {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.task.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.description {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.priority {
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.priority.low {
+  background-color: green;
+}
+
+.priority.medium {
+  background-color: orange;
+}
+
+.priority.high {
+  background-color: red;
+}
+
+.filter-input,
+.description-input,
+.priority-select {
+  width: 90%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: none;
+
+}
+
+.priority-select {
+  margin-top: 10px;
+}
+
+.button-89 {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.button-89:hover {
+  background-color: #0056b3;
+}
+.filter-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.filter-select:focus {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+  outline: none;
 }
